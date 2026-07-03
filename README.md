@@ -5,13 +5,13 @@
 
 En este ejercicio se nos pedía normalizar los datos de una tabla proporcionada empleando las 3 Normas Formales. La tabla proporcionada era la siguiente:
 
-<img src="/img2.jpg">
+<img src="/img1.jpg">
 
 ## Normalización de la tabla
 
 Empleando Google Sheets, dividí la tabla proporcionada en tres diferentes, con "classrooms" siendo la principal y conteniendo "students" y "courses". La clave primaria "id_classroom" es la clave foránea que relaciona las otras dos tablas con la principal y entre ellas.
 
-<img src="/img1.jpg">
+<img src="/img2.jpg">
 
 ## Diagrama de Chen
 
