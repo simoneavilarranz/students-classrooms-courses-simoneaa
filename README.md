@@ -11,28 +11,29 @@ En este ejercicio se nos pedía normalizar los datos de una tabla proporcionada 
 
 ```mermaid
 ---
-config:
-  layout: elk
+title: Classroom ER Diagram
 ---
 erDiagram
-    CLASSROOMS {
-        string id_classroom PK
+    classrooms {
+        int id_classroom
         string classroom_description
     }
-    STUDENTS {
-        int id_student PK
-        string first_name
-        string last_name
-        string classroom_id FK
-    }
-    COURSES {
-        int id_course PK
+
+    courses {
+        int id_course
         string course_name
-        string classroom_id FK
+        int classroom_id
     }
 
-    CLASSROOMS ||--o{ STUDENTS : "1 to N"
-    CLASSROOMS ||--o{ COURSES : "1 to N"
+    students {
+        int id_student
+        string first_name
+        string last_name
+        int classroom_id
+    }
+
+    classrooms ||--o{ courses : "has"
+    classrooms ||--o{ students : "has"
 ```
 
 ## Diagrama de patas de gallo
