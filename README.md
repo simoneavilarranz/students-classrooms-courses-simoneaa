@@ -62,7 +62,7 @@ flowchart LR
     class id_classroom,classroom_description,id_course,course_name,classroom_id_c,id_student,first_name,last_name,classroom_id_s attribute;
 ```
 
-Diagrama original creado con diagrams.net
+Diagrama original creado con diagrams.net  
 <img src="/students-classrooms-courses-chen.jpg">
 
 ## Diagrama de patas de gallo
@@ -95,5 +95,5 @@ erDiagram
     }
 ```
 
-Diagrama original creado con diagrams.net
+Diagrama original creado con diagrams.net  
 <img src="/students-classrooms-courses-gallo.jpg">
