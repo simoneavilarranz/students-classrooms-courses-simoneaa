@@ -9,7 +9,7 @@ En este ejercicio se nos pedía normalizar los datos de una tabla proporcionada 
 
 ## Normalización de la tabla
 
-Empleando Google Sheets, dividí la tabla proporcionada en tres diferentes, con "classrooms" siendo la principal y conteniendo "students" y "courses". La clave primaria "id_classroom" es la clave foránea que relaciona las otras dos tablas con la principal y entre ellas.
+Empleando Google Sheets, dividí la tabla proporcionada en tres diferentes, con "classrooms" siendo la principal y conteniendo "students" y "courses". La clave primaria "id_classroom" es en las otras dos tablas la clave foránea que las relaciona entre ellas y con la tabla principal.
 
 <img src="/img2.jpg">
 
@@ -17,7 +17,9 @@ Empleando Google Sheets, dividí la tabla proporcionada en tres diferentes, con 
 
 **Diagrama original creado con diagrams.net**  
 
-<img src="/students-classrooms-courses-chen.jpg">
+<img src="/students-classrooms-courses-chen.jpg">  
+
+**Diagrama adaptado a readme empleando Mermaid**  
 
 ```mermaid
 ---
@@ -71,6 +73,8 @@ flowchart LR
 **Diagrama original creado con diagrams.net**  
 
 <img src="/students-classrooms-courses-gallo.jpg">
+
+**Diagrama adaptado a readme empleando Mermaid**  
 
 ```mermaid
 ---
