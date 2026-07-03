@@ -12,28 +12,41 @@ En este ejercicio se nos pedía normalizar los datos de una tabla proporcionada 
 ```mermaid
 ---
 title: Classroom ER Diagram
+layout: elk
 ---
-erDiagram
-    classrooms {
-        int id_classroom
-        string classroom_description
-    }
+flowchart LR
+    %% Entities
+    classrooms(["classrooms"])
+    courses(["courses"])
+    students(["students"])
 
-    courses {
-        int id_course
-        string course_name
-        int classroom_id
-    }
+    %% Attributes
+    id_classroom(((id_classroom)))
+    classroom_description(((classroom_description)))
+    id_course(((id_course)))
+    course_name(((course_name)))
+    classroom_id_c(((classroom_id)))
+    id_student(((id_student)))
+    first_name(((first_name)))
+    last_name(((last_name)))
+    classroom_id_s(((classroom_id)))
 
-    students {
-        int id_student
-        string first_name
-        string last_name
-        int classroom_id
-    }
+    %% Relationships
+    classrooms -- "1" --> R1(( ))
+    R1 -- "N" --> courses
+    classrooms -- "1" --> R2(( ))
+    R2 -- "N" --> students
 
-    classrooms ||--o{ courses : "has"
-    classrooms ||--o{ students : "has"
+    %% Attribute connections
+    id_classroom --> classrooms
+    classroom_description --> classrooms
+    id_course --> courses
+    course_name --> courses
+    classroom_id_c --> courses
+    id_student --> students
+    first_name --> students
+    last_name --> students
+    classroom_id_s --> students
 ```
 
 ## Diagrama de patas de gallo
