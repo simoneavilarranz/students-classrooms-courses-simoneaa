@@ -11,11 +11,11 @@ En este ejercicio se nos pedía normalizar los datos de una tabla proporcionada 
 
 ```mermaid
 ---
-title: Classroom ER Diagram
+title: Classroom ER Diagram (Monochrome)
 layout: elk
 ---
 flowchart LR
-    %% Entities (square shapes, bigger font)
+    %% Entities (square shapes)
     classrooms["classrooms"]
     courses["courses"]
     students["students"]
@@ -31,13 +31,13 @@ flowchart LR
     last_name(("last_name"))
     classroom_id_s(("classroom_id"))
 
-    %% Relationships (connections)
+    %% Relationships
     classrooms -- "1" --> R1((has))
     R1 -- "N" --> courses
     classrooms -- "1" --> R2((has))
     R2 -- "N" --> students
 
-    %% Attribute connections
+    %% Attribute links
     id_classroom --> classrooms
     classroom_description --> classrooms
     id_course --> courses
@@ -48,9 +48,9 @@ flowchart LR
     last_name --> students
     classroom_id_s --> students
 
-    %% Class styling
-    classDef entity fill:#eef2ff,stroke:#818cf8,stroke-width:2px,font-size:16px,font-weight:bold;
-    classDef attribute fill:#fefce8,stroke:#facc15,stroke-width:1px,font-size:12px;
+    %% Class definitions (monochrome scheme)
+    classDef entity fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#000,font-size:16px,font-weight:bold;
+    classDef attribute fill:#fff,stroke:#333,stroke-width:1px,color:#000,font-size:12px;
 
     %% Apply classes
     class classrooms,courses,students entity;
