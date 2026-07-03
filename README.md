@@ -37,4 +37,3 @@ erDiagram
         string course_name
         string classroom_id FK
     }
-```
