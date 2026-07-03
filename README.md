@@ -31,7 +31,7 @@ erDiagram
         string last_name
         string classroom_id FK
     }
-    
+```
     COURSES {
         int id_course PK
         string course_name
