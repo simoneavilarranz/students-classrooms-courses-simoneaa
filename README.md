@@ -63,6 +63,7 @@ flowchart LR
 ```
 
 Diagrama original creado con diagrams.net  
+
 <img src="/students-classrooms-courses-chen.jpg">
 
 ## Diagrama de patas de gallo
@@ -96,4 +97,5 @@ erDiagram
 ```
 
 Diagrama original creado con diagrams.net  
+
 <img src="/students-classrooms-courses-gallo.jpg">
